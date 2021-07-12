@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /*comment*/
@@ -88,8 +87,6 @@ a{
   font-size: 14px;
 }
 
-
-
 /*About Section*/
 
 .aboutsection{
@@ -122,7 +119,7 @@ a{
 
 /*Project Section - see  bottom of CSS*/
 
-  /*approach Section*/
+/*approach Section*/
 
   .approachsection{
   align-content: center;
@@ -151,9 +148,9 @@ a{
   padding-bottom: 150px;
 }
 
-  /*process Section*/
+/*process Section*/
 
-  .processsection{
+.processsection{
   align-content: center;
   padding-left: 200px;
   padding-right: 200px;
@@ -189,15 +186,18 @@ a{
   width: 600px;
 }
 
-/*skill Section*/
-
+/*skill Section using css grid*/
 
 .skillContainer {
   width: 100%;
   display: flex;
+  padding: 100px;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
+}
+
+.skillContainer div {
   width: 33%;
   align-content: center;
   flex: 1;
@@ -212,7 +212,6 @@ a{
 
 .skillimg{
   width: 200px;
-  height: 150px;
 }
 
 .skillContainer h3{
@@ -222,6 +221,7 @@ a{
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 3px;
   font-size: 18px;
+  padding-bottom: 50px;
   padding-left: 50px;
 }
 
@@ -237,7 +237,7 @@ a{
   }
 }
 
-/* Toolbox Section */
+/* Toolbox Section using css grid*/
 
 .tool h5{
   color: #353737;
@@ -306,7 +306,6 @@ a{
   justify-content: center;
 }
   
-  
 .footercontainer{
   max-width: 100%;
   padding: 50px;
@@ -320,7 +319,6 @@ a{
   border-radius: 50%;
 }
     
-  
 .foot1{
   flex: 1;
   padding: 50px;
@@ -337,7 +335,6 @@ a{
   font-size: 18px;
 }
   
-    
 .foot2{
   flex: 1;
   padding: 50px;
@@ -354,7 +351,6 @@ a{
   font-size: 18px;
 }
   
-  
 .foot3{
   flex: 1;
   padding: 50px;
@@ -370,8 +366,6 @@ a{
   letter-spacing: 3px;
   font-size: 18px;
 }
-  
-  
   
 .foot4{
   flex: 1;
@@ -406,14 +400,12 @@ a{
   border-radius: 50%;
 }
   
-  
 @media screen and (max-width: 600px){
   .footercontainer{
     flex-direction: column-reverse;}
 }
 
-/* Projects */
-
+/* Projects using css grid*/
 
 h5{
   color: #353737;
@@ -439,7 +431,6 @@ h5{
   border-radius: 50%;
 }
   
-
 .internalcontainerDog{
   flex: 1;
   padding: 30px;
@@ -494,7 +485,6 @@ h5{
   padding-bottom: 50px;
 }
 
-
 .internalcontainerHealth{
   flex: 1;
   padding: 30px;
@@ -526,46 +516,4 @@ h5{
       flex-direction: column-reverse;}}
   
 
-/* Skills */
 
-.skillContainer {
-  width: 100%;
-  display: flex;
-  padding: 100px;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
-
-}
-.skillContainer div {
-  width: 33%;
-  align-content: center;
-  flex: 1;
-  padding-left: 150px;
-  padding-right: 150px;
-  color: #353737;
-  font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.8;
-  font-size: 18px;
-  padding-bottom: 150px;
-}
-
-.skillimg{
-  width: 200px;
-}
-
-.skillContainer h3{
-  color: #353737;
-  padding-top: 20px;
-  font-weight: 600;
-  font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: 3px;
-  font-size: 18px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-}
-
-.skillContainer ul{
-  padding-left: 50px;
-}
