@@ -191,15 +191,13 @@ a{
 
 /*skill Section*/
 
+
 .skillContainer {
   width: 100%;
   display: flex;
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
-
-}
-.skillContainer div {
   width: 33%;
   align-content: center;
   flex: 1;
@@ -214,6 +212,7 @@ a{
 
 .skillimg{
   width: 200px;
+  height: 150px;
 }
 
 .skillContainer h3{
