@@ -37,9 +37,9 @@ a{
 
 .mainheader{
   background-image: url("../images/titlebackgroundfade.png");
-  background-size: contain;
   background-color: white;
-  height: 800px;
+  height: 1000px;
+  background-repeat: no-repeat;
 }
 
 .profile{
@@ -87,6 +87,43 @@ a{
   font-size: 14px;
 }
 
+@media screen and (max-width: 600px){
+
+  .title h1{
+    font-size: 45px;}
+
+  .navbar{
+    width: fit-content;
+    font-size: 24px;
+    align-content: center;
+  }
+
+  .title h2{
+    font-size: 24px;
+  }
+  
+  .title{
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  }
+
+  .profile{
+    top: 100px;
+    left: 400px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .mainheader{
+    background-image: url("../images/titlebackgroundfade.png");
+    background-color: white;
+    height: 1000px;
+    background-repeat: no-repeat;
+  }
+}
+
 /*About Section*/
 
 .aboutsection{
@@ -115,6 +152,12 @@ a{
   line-height: 1.8;
   font-size: 18px;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 600px){
+  .aboutsection{
+  padding-left: 50px;
+  padding-right: 50px;}
 }
 
 /*Project Section - see  bottom of CSS*/
@@ -146,6 +189,12 @@ a{
   line-height: 1.8;
   font-size: 18px;
   padding-bottom: 150px;
+}
+
+@media screen and (max-width: 600px){
+  .approachsection{
+  padding-left: 50px;
+  padding-right: 50px;}
 }
 
 /*process Section*/
@@ -186,21 +235,16 @@ a{
   width: 600px;
 }
 
-/*skill Section using css grid*/
-
-.skillContainer {
-  width: 100%;
-  display: flex;
-  padding: 100px;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+@media screen and (max-width: 600px){
+  .processsection{
+  padding-left: 50px;
+  padding-right: 50px;}
 }
 
-.skillContainer div {
-  width: 33%;
-  align-content: center;
-  flex: 1;
+/*skill Section using css grid*/
+
+.skillContainer{
+  display: grid;
   padding-left: 150px;
   padding-right: 150px;
   color: #353737;
@@ -210,8 +254,16 @@ a{
   font-size: 18px;
 }
 
+.skillsections{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 700px;
+}
+
 .skillimg{
   width: 200px;
+  height: 150px;
 }
 
 .skillContainer h3{
@@ -225,19 +277,30 @@ a{
   padding-left: 50px;
 }
 
-.skillContainer ul{
-  padding-left: 50px;
+.research, .development{
+  justify-self: center;
+  align-self: center;
 }
 
-@media screen and (max-width: 600px){
-  .skills-container1{
-    flex-direction: column-reverse;}
-  .skillContainer{
-    width: 100%;
+.research ul, .development ul{
+  padding-left: 60px;
+}
+
+@media screen and (max-width:600px){
+
+.skillContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 1000px;
   }
+
 }
 
 /* Toolbox Section using css grid*/
+
+.toolbox{
+  padding-bottom: 150px;
+}
 
 .tool h5{
   color: #353737;
@@ -257,31 +320,24 @@ a{
   grid-template-columns: 180px 180px 180px 180px 180px;
   grid-template-rows: 180px 180px;
   padding-bottom: 200px;
+  height: 400px;
 }
 
-.toolimg {
-  width: 150px;
-  height: 150px;
-  padding: 30px;
+.figma, .photoshop, .xd, .miro, .invision, .adobe, .google, .css, .html, .bootstrap{
+  align-self: center;
+  justify-self: center;
 }
+
 
 @media screen and (max-width: 600px){
- .toolboxGrid{
-   margin: 0px 5%;
-   display: column;
-   grid-template-rows: 300px 300px 300px 300px 300px;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-   grid-template-areas: 
-   "figma photoshop"
-   "xd miro"
-   "invision adobe"
-   "google css"
-   "html bootstrap"};
-   .toolimg{
-    width: 100px;
-    height: 100px;
-    padding: 30px;
-   }
+  .toolboxGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    height: 1000px;
+  }
 }
 
 /* Footer Section */
