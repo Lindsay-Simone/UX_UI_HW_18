@@ -200,6 +200,7 @@ a{
   font-family: 'Josefin Sans', sans-serif;
   line-height: 1.8;
   font-size: 18px;
+  padding-bottom: 150px;
 }
 
 .skillsections{
@@ -223,6 +224,7 @@ a{
   font-size: 18px;
   padding-bottom: 50px;
   padding-left: 50px;
+  align-items: top;
 }
 
 .research, .development{
@@ -233,7 +235,6 @@ a{
 .research ul, .development ul{
   padding-left: 60px;
 }
-
 
 /* Toolbox Section using css grid*/
 
@@ -266,7 +267,6 @@ a{
   align-self: center;
   justify-self: center;
 }
-
 
 /* Footer Section */
 
@@ -383,7 +383,6 @@ a{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
 }
-  
 
 /* Projects using css grid*/
 
@@ -495,8 +494,10 @@ h5{
 @media screen and (max-width: 600px){
     .projectscontainer{
       flex-direction: column-reverse;}
+
     .footercontainer{
       flex-direction: column-reverse;}
+
     .toolboxGrid{
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -504,41 +505,72 @@ h5{
       row-gap: 20px;
       column-gap: 20px;
       height: 1000px;}
+
     .skillContainer {
-      padding-left: 0px;
-      padding-right: 0px;
-      height: 1000px;}
+      height: 700px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 50px;
+    }
+
+    .research img{
+      width: 150px;
+      height: 100px;
+    }
+
+    .development img{
+      width: 150px;
+      height: 100px;
+    }
+
     .processsection{
       padding-left: 50px;
       padding-right: 50px;}
+
     .approachsection{
       padding-left: 50px;
       padding-right: 50px;}
+
     .aboutsection{
       padding-left: 50px;
       padding-right: 50px;}
+
     .title h1{
       font-size: 45px;}
+
     .title h2{
       font-size: 24px;}
+
     .title{
       height: 600px;
       background-repeat: no-repeat;
       background-position: center;
       justify-content: center;}
+
     .profile{
      display: none;}
+
     .mainheader{
       background-image: url("../images/titlebackgroundfade.png");
       background-color: white;
       height: 1000px;
       background-repeat: no-repeat;}
+
     .mainheader h3{
       display: none;}
+
     .diamond{
       width: 350px;}
 
-
+    .footercontainer {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+      height: 600px;
+      justify-content: center;}
+  
     }
   
 
