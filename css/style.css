@@ -28,7 +28,7 @@ a{
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 3px;
@@ -87,42 +87,6 @@ a{
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px){
-
-  .title h1{
-    font-size: 45px;}
-
-  .navbar{
-    width: fit-content;
-    font-size: 24px;
-    align-content: center;
-  }
-
-  .title h2{
-    font-size: 24px;
-  }
-  
-  .title{
-  height: 600px;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  }
-
-  .profile{
-    top: 100px;
-    left: 400px;
-    width: 150px;
-    height: 150px;
-  }
-
-  .mainheader{
-    background-image: url("../images/titlebackgroundfade.png");
-    background-color: white;
-    height: 1000px;
-    background-repeat: no-repeat;
-  }
-}
 
 /*About Section*/
 
@@ -154,11 +118,6 @@ a{
   padding-bottom: 100px;
 }
 
-@media screen and (max-width: 600px){
-  .aboutsection{
-  padding-left: 50px;
-  padding-right: 50px;}
-}
 
 /*Project Section - see  bottom of CSS*/
 
@@ -191,11 +150,6 @@ a{
   padding-bottom: 150px;
 }
 
-@media screen and (max-width: 600px){
-  .approachsection{
-  padding-left: 50px;
-  padding-right: 50px;}
-}
 
 /*process Section*/
 
@@ -233,12 +187,6 @@ a{
   width: 60%;
   padding-bottom: 100px;
   width: 600px;
-}
-
-@media screen and (max-width: 600px){
-  .processsection{
-  padding-left: 50px;
-  padding-right: 50px;}
 }
 
 /*skill Section using css grid*/
@@ -286,15 +234,6 @@ a{
   padding-left: 60px;
 }
 
-@media screen and (max-width:600px){
-
-.skillContainer {
-  padding-left: 0px;
-  padding-right: 0px;
-  height: 1000px;
-  }
-
-}
 
 /* Toolbox Section using css grid*/
 
@@ -328,17 +267,6 @@ a{
   justify-self: center;
 }
 
-
-@media screen and (max-width: 600px){
-  .toolboxGrid{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    height: 1000px;
-  }
-}
 
 /* Footer Section */
 
@@ -456,10 +384,6 @@ a{
   border-radius: 50%;
 }
   
-@media screen and (max-width: 600px){
-  .footercontainer{
-    flex-direction: column-reverse;}
-}
 
 /* Projects using css grid*/
 
@@ -570,7 +494,52 @@ h5{
   
 @media screen and (max-width: 600px){
     .projectscontainer{
-      flex-direction: column-reverse;}}
+      flex-direction: column-reverse;}
+    .footercontainer{
+      flex-direction: column-reverse;}
+    .toolboxGrid{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+      height: 1000px;}
+    .skillContainer {
+      padding-left: 0px;
+      padding-right: 0px;
+      height: 1000px;}
+    .processsection{
+      padding-left: 50px;
+      padding-right: 50px;}
+    .approachsection{
+      padding-left: 50px;
+      padding-right: 50px;}
+    .aboutsection{
+      padding-left: 50px;
+      padding-right: 50px;}
+    .title h1{
+      font-size: 45px;}
+    .title h2{
+      font-size: 24px;}
+    .title{
+      height: 600px;
+      background-repeat: no-repeat;
+      background-position: center;
+      justify-content: center;}
+    .profile{
+     display: none;}
+    .mainheader{
+      background-image: url("../images/titlebackgroundfade.png");
+      background-color: white;
+      height: 1000px;
+      background-repeat: no-repeat;}
+    .mainheader h3{
+      display: none;}
+    .diamond{
+      width: 350px;}
+
+
+    }
   
 
 
